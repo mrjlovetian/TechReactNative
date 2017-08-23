@@ -30,7 +30,7 @@ self.view.addSubview(rootView!);
 import RxSwift
 import RxCocoa
 </code></pre>
-*ReactNative访问Object-C需要建立RCT_EXPORT_MODULE通讯，以回调的方式像RN回传，RN
+*ReactNative访问Object-C需要建立RCT_EXPORT_MODULE通讯，以回调的方式像RN回传，RN使用<pre><code>const UserInfoSync = NativeModules.UserInfoSync;</code></pre>导入原生模块访问相关数据。
 
 
 
