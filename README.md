@@ -14,13 +14,23 @@
 * 使用的时候
 <pre><code>
 let path = Bundle.main.path(forResource: "index.ios", ofType: "jsbundle")
-        let rootView = RCTRootView(bundleURL: NSURL(string: path!)! as URL, moduleName: "RNforSaaS", initialProperties: nil, launchOptions: nil);
-        self.view.addSubview(rootView!);
+let rootView = RCTRootView(bundleURL: NSURL(string: path!)! as URL, moduleName: "RNforSaaS", initialProperties: nil, launchOptions: nil);
+self.view.addSubview(rootView!);
 </code></pre>
 * [如何打包](https://segmentfault.com/a/1190000004189538)
 
 ## 跨平台传值
-
+* Object-C访问Swift的值需要导入<br>
+<pre><code>#import "TopsTechSaaS-Swift.h"</code><pre>
+    * 如果访问Swift的static值或是单列相关数据，可以建一个桥接类，在桥接类里对OC要访问的值对外访问即可。
+* Swift访问Object-C需要导入<br>
+<pre><code>TopsTechSaaS-Bridging-Header.h</code><pre> 
+但是有的第三方库在TopsTechSaaS-Bridging-Header文件中导入相关.h文件也是无法访问，需要导入第三方文件如：
+<pre><code>
+import RxSwift
+import RxCocoa
+</code></pre>
+*ReactNative访问Object-C需要建立RCT_EXPORT_MODULE通讯，以回调的方式像RN回传，RN
 
 
 
