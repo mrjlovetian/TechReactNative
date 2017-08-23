@@ -21,7 +21,7 @@ self.view.addSubview(rootView!);
 
 ## 跨平台传值
 * Object-C访问Swift的值需要导入<br>
-<pre><code>#import "TopsTechSaaS-Swift.h"</code><pre>
+<pre><code>#import "TopsTechSaaS-Swift.h"</code></pre>
     * 如果访问Swift的static值或是单列相关数据，可以建一个桥接类，在桥接类里对OC要访问的值对外访问即可。
 * Swift访问Object-C需要导入<br>
 <pre><code>TopsTechSaaS-Bridging-Header.h</code></pre> 
