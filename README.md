@@ -12,11 +12,11 @@
 * node_modules文件放在项目根目录下使用pod集成到项目中。
 * assets(静态资源)、index.ios.jsbundle(编译代码)、index.ios.jsbundle.meta必要的支持文件放在项目模块中。
 * 使用的时候
-'''
+<pre><code>
 let path = Bundle.main.path(forResource: "index.ios", ofType: "jsbundle")
         let rootView = RCTRootView(bundleURL: NSURL(string: path!)! as URL, moduleName: "RNforSaaS", initialProperties: nil, launchOptions: nil);
         self.view.addSubview(rootView!);
-'''
+</code></pre>
 * [如何打包](https://segmentfault.com/a/1190000004189538)
 
 ## 跨平台传值
