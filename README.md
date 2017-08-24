@@ -1,5 +1,5 @@
 # 什么是ReactNative?
-移动端平台能够运行 JavaScript 代码，JavaScript 不仅仅可以传递配置信息，还可以表达逻辑信息的优点。
+移动端平台能够运行 JavaScript 代码，JavaScript 不仅仅可以传递配置信息，还可以表达逻辑信息的优点。[相关学习链接](http://blog.cnbang.net/tech/2698/)
 
 # ReactNative原理
 JavaScript 的形式告诉 Objective-C 该执行什么代码。
